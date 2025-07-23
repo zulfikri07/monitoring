@@ -80,15 +80,15 @@ col1, col2, col3 = st.columns(3)
 with col1:
     st.markdown(display_card("Suhu", latest["Suhu"], "°C", "🌡️"), unsafe_allow_html=True)
 with col2:
-    st.markdown(display_card("Kelembaban", latest["Kelembaban"], "%", "💧"), unsafe_allow_html=True)
+    st.markdown(display_card("Kelembapan", latest["Kelembapan"], "%", "💧"), unsafe_allow_html=True)
 with col3:
     st.markdown(display_card("Curah Hujan", latest["Hujan"], "mm", "🌧️"), unsafe_allow_html=True)
 
 col1, col2, col3 = st.columns(3)
 with col1:
-    st.markdown(display_card("Kecepatan Angin", latest["W.Speed"], "m/s", "💨"), unsafe_allow_html=True)
+    st.markdown(display_card("Kecepatan Angin", latest["W_Speed"], "m/s", "💨"), unsafe_allow_html=True)
 with col2:
-    st.markdown(display_card("Arah Angin", latest["W.Dir"], "°", "🧭"), unsafe_allow_html=True)
+    st.markdown(display_card("Arah Angin", latest["W_Dir"], "°", "🧭"), unsafe_allow_html=True)
 with col3:
     st.markdown(display_card("Tekanan", latest["Tekanan"], "hPa", "📈"), unsafe_allow_html=True)
 
